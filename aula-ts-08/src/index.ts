@@ -17,3 +17,4 @@ function play(game: Game): void {
     // runs the game
     console.log(game);
 }
+play(game);
