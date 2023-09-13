@@ -14,7 +14,7 @@ function showResult(result: number): void {
     if (isEven(result)) {
         console.log(`The result is ${result} and it's even!`);
     } else {
-        console.log(`The result is ${result} and it's even!`);
+        console.log(`The result is ${result} and it's odd!`);
     }
 }
 
