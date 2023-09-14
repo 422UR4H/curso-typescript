@@ -1,22 +1,17 @@
 {
-  "name": "movies",
+  "name": "aula-ts-10",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.ts"
+    "buid": "tsc",
+    "start": "node ./dist/index.js",
+    "dev": "nodemon ./src/index.ts"
   },
-  "keywords": [],
-  "author": "",
+  "author": "422UR4H",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "joi": "^17.9.2"
-  },
   "devDependencies": {
-    "@types/express": "^4.17.17",
-    "@types/node": "^18.16.3",
-    "nodemon": "^2.0.22",
+    "nodemon": "^3.0.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }

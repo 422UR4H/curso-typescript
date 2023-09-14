@@ -1,11 +1,9 @@
-import express, { json } from "express";
-import musicRouter from "./routers/music-router";
+function identity<T>(value: T) : T {
+    return value;
+}
 
-const app = express();
+console.log(identity(1)) // 1
 
-app.use(json());
-app.use(musicRouter);
-
-app.listen(5000, () => {
-  console.log(`Server is up and running on port 5000`);
-})
+console.log(identity<number>(42)); // 42
+console.log(identity<string>("Hello")); // Hello
+console.log(identity<number[]>([1,2,3])); // [1, 2, 3]
